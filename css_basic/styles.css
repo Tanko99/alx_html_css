@@ -76,3 +76,7 @@ main, article, aside {
 article p, aside p {
     margin-bottom: 1rem;
 }
+.logo {
+  font-size: 2em;
+  padding: 0 10px;
+}
