@@ -9,7 +9,7 @@ This project is part of the ALX Front-End curriculum and focuses on styling an a
 - No external libraries or frameworks allowed
 
 ## 🎨 Design Reference
-- Figma Design: [Link to design if available]
+- Figma Design: [https://www.figma.com/proto/dyYL6Ku4WG7vsdpwvlcJZC/Homepage?node-id=3558-0&t=pThM1MugHgVPyJRD-1]
 - Fonts used:
   - Source Sans Pro
   - Spin Cycle OT
