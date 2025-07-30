@@ -80,3 +80,42 @@ article p, aside p {
   font-size: 2em;
   padding: 0 10px;
 }
+/*QUOTES */
+.quote {
+  background-color: #a95eff; /* Purple background */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.quote-block {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-block img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 5px solid #24123f; /* dark border */
+  margin-bottom: 20px;
+}
+
+.quote-content blockquote {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.quote-content p {
+  margin: 5px 0;
+}
+
+.quote-co
