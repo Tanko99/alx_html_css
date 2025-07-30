@@ -118,4 +118,98 @@ article p, aside p {
   margin: 5px 0;
 }
 
-.quote-co
+.quote-content strong {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.quote-content p:last-child {
+  font-style: italic;
+  color: #ddd;
+}
+
+/* Videos Section */
+.videos {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.videos h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.video-item:hover {
+  transform: translateY(-5px);
+}
+
+.video-item img {
+  width: 100%;
+  display: block;
+}
+
+.video-item h3 {
+  font-size: 1.2rem;
+  margin: 15px;
+  color: #222;
+}
+
+.video-item p {
+  margin: 0 15px 10px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.video-author {
+  display: flex;
+  align-items: center;
+  padding: 0 15px 10px;
+  gap: 10px;
+}
+
+.video-author img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.video-author h4 {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0;
+}
+
+.video-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px 15px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.stars img {
+  width: 16px;
+  height: 16px;
+}
+
