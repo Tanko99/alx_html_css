@@ -1,225 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>HTML Advanced</title>
-    </head>
-    <body>
-        <header>
-              <a href="#"><img src="logo.png" alt="Logo" /></a>
-             <nav>
-               <a href="#">Link 1</a>
-             <a href="#">Link 2</a>
-             <a href="#">Link 3</a>
-          </nav>
-        </header>
-        <main>
-              <section class="banner">
-        <div>
-          <h1>Main heading</h1>
-          <p>Some introductory text.</p>
-          <button>Call to Action</button>
-        </div>
-        <div>
-          <h2>Subheading</h2>
-          <div class="features">
-            <div>
-              <img src="image1.png" alt="Feature 1" />
-              <h3>Feature Title 1</h3>
-              <p>Feature description 1</p>
-            </div>
-            <div>
-              <img src="image2.png" alt="Feature 2" />
-              <h3>Feature Title 2</h3>
-              <p>Feature description 2</p>
-            </div>
-            <div>
-              <img src="image3.png" alt="Feature 3" />
-              <h3>Feature Title 3</h3>
-              <p>Feature description 3</p>
-            </div>
-            <div>
-              <img src="image4.png" alt="Feature 4" />
-              <h3>Feature Title 4</h3>
-              <p>Feature description 4</p>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileSchool</title>
+</head>
+<body class="works_on_smartphone">
+  <header>
+    <a href="#"><img src="images/logo.png" alt="SmileSchool Logo"></a>
+    <nav>
+      <a href="#courses">Courses</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Banner Section -->
+    <section class="banner">
+      <div class="banner-content">
+        <h1>Get Schooled</h1>
+        <p>Smiles, Grin, Laugh</p>
+        <button>Register for Free</button>
+      </div>
+      <div class="banner-stats">
+        <h2>Learn from the pros</h2>
+        <div class="pro-list">
+          <div class="pro-item">
+            <img src="images/pro1.png" alt="Pro 1">
+            <h3>Phillip Massey</h3>
+            <p>Smile of the year</p>
+          </div>
+          <div class="pro-item">
+            <img src="images/pro2.png" alt="Pro 2">
+            <h3>Nannie Lawrence</h3>
+            <p>Best little smile</p>
+          </div>
+          <div class="pro-item">
+            <img src="images/pro3.png" alt="Pro 3">
+            <h3>Bruce Walsh</h3>
+            <p>Best Friend Smile</p>
+          </div>
+          <div class="pro-item">
+            <img src="images/pro4.png" alt="Pro 4">
+            <h3>Henry Hughes</h3>
+            <p>24h smiles winner</p>
           </div>
         </div>
-      </section>
-        <section class="quote">
-        <div>
-          <img src="author.png" alt="Author" />
-          <div>
-            <blockquote>“This is a great quote.”</blockquote>
-            <p>– Author Name</p>
-            <p>Additional info or text.</p>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote">
+      <div class="quote-block">
+        <img src="images/avatar.png" alt="Avatar">
+        <div class="quote-content">
+          <blockquote>"Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun!"</blockquote>
+          <p><strong>Person Name</strong></p>
+          <p>Weather Presenter</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="videos">
+      <h2>Most popular tutorials</h2>
+      <div class="video-list">
+        <div class="video-item">
+          <img src="images/video1.png" alt="Video 1">
+          <h3>Diagonal Smile</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="video-author">
+            <img src="images/author1.png" alt="Author 1">
+            <h4>Phillip Massey</h4>
+          </div>
+          <div class="video-rating">
+            <div class="stars">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_off.png" alt="star">
+            </div>
+            <p>8 min</p>
           </div>
         </div>
-      </section>
-        
-      
-      <section class="videos">
-  <h2>Videos</h2>
-  <div class="videos-container">
-    <!-- Video Block 1 -->
-    <div class="video-card">
-      <img src="images/video1.jpg" alt="Video 1 thumbnail" />
-      <h3>How to code like a pro</h3>
-      <p>Learn tips and tricks from industry professionals.</p>
-
-      <div class="author">
-        <img src="images/author1.jpg" alt="Author 1" />
-        <h4>John Doe</h4>
+        <!-- Repeat 3 more times -->
       </div>
+    </section>
 
-      <div class="rating">
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_off.png" alt="Star" />
-        <p>4.0</p>
+    <!-- Membership Section -->
+    <section class="membership">
+      <h2>Free membership</h2>
+      <div class="membership-list">
+        <div class="membership-item">
+          <img src="images/mem1.png" alt="Membership Icon">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>Join now</button>
+        </div>
+        <!-- Repeat 3 more times -->
       </div>
-    </div>
+    </section>
 
-    <!-- Video Block 2 -->
-    <div class="video-card">
-      <img src="images/video2.jpg" alt="Video 2 thumbnail" />
-      <h3>Mastering CSS Grid</h3>
-      <p>Everything you need to know about CSS layout.</p>
-
-      <div class="author">
-        <img src="images/author2.jpg" alt="Author 2" />
-        <h4>Jane Smith</h4>
-      </div>
-
-      <div class="rating">
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_off.png" alt="Star" />
-        <img src="images/star_off.png" alt="Star" />
-        <p>3.0</p>
-      </div>
-    </div>
-
-    <!-- Video Block 3 -->
-    <div class="video-card">
-      <img src="images/video3.jpg" alt="Video 3 thumbnail" />
-      <h3>JavaScript DOM Deep Dive</h3>
-      <p>Understand how to manipulate the DOM effectively.</p>
-
-      <div class="author">
-        <img src="images/author3.jpg" alt="Author 3" />
-        <h4>Emily Rose</h4>
-      </div>
-
-      <div class="rating">
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_on.png" alt="Star" />
-        <p>5.0</p>
-      </div>
-    </div>
-
-    <!-- Video Block 4 -->
-    <div class="video-card">
-      <img src="images/video4.jpg" alt="Video 4 thumbnail" />
-      <h3>Responsive Design 101</h3>
-      <p>Create websites that look great on all devices.</p>
-
-      <div class="author">
-        <img src="images/author4.jpg" alt="Author 4" />
-        <h4>Michael Brown</h4>
-      </div>
-
-      <div class="rating">
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_on.png" alt="Star" />
-        <img src="images/star_off.png" alt="Star" />
-        <img src="images/star_off.png" alt="Star" />
-        <p>3.0</p>
-       </div>
-         </div>
-       </div>
-   </section>
-
-<section class="membership">
-  <h2>Membership</h2>
-  <div class="membership-container">
-    <!-- Membership Block 1 -->
-    <div class="membership-card">
-      <img src="images/member1.png" alt="Member plan 1" />
-      <h3>Free Plan</h3>
-      <p>Access to limited tutorials and community support.</p>
-      <button>Join Now</button>
-    </div>
-
-    <!-- Membership Block 2 -->
-    <div class="membership-card">
-      <img src="images/member2.png" alt="Member plan 2" />
-      <h3>Basic Plan</h3>
-      <p>Full access to tutorials and basic support.</p>
-      <button>Join Now</button>
-    </div>
-
-    <!-- Membership Block 3 -->
-    <div class="membership-card">
-      <img src="images/member3.png" alt="Member plan 3" />
-      <h3>Pro Plan</h3>
-      <p>All-access pass with priority support and extras.</p>
-      <button>Join Now</button>
-    </div>
-
-    <!-- Membership Block 4 -->
-    <div class="membership-card">
-      <img src="images/member4.png" alt="Member plan 4" />
-      <h3>Enterprise Plan</h3>
-      <p>Customized training for your entire team.</p>
-      <button>Join Now</button>
-    </div>
-  </div>
-</section>
+    <!-- FAQ Section -->
     <section class="faq">
-        <div class="row">
-          <div class="faq-item">
-            <h4>Question 1</h4>
-            <p>Answer 1</p>
-          </div>
-          <div class="faq-item">
-            <h4>Question 2</h4>
-            <p>Answer 2</p>
-          </div>
+      <div class="faq-row">
+        <div class="faq-item">
+          <h3>How does it work?</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
         </div>
-        <div class="row">
-          <div class="faq-item">
-            <h4>Question 3</h4>
-            <p>Answer 3</p>
-          </div>
-          <div class="faq-item">
-            <h4>Question 4</h4>
-            <p>Answer 4</p>
-          </div>
-        </div>
-      </section>
-  </main>
-   <footer>
-      <div class="footer-container">
-        <div class="footer-row">
-          <img src="logo.png" alt="Logo" />
-          <div class="social">
-            <a href="#"><img src="facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="twitter.png" alt="Twitter" /></a>
-            <a href="#"><img src="linkedin.png" alt="LinkedIn" /></a>
-          </div>
-          <p>© 2025 Your Company. All rights reserved.</p>
+        <div class="faq-item">
+          <h3>How long do I have access?</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
-    </footer>
-    </body>
+      <div class="faq-row">
+        <div class="faq-item">
+          <h3>Can I share the content?</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is it really free?</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-row">
+        <img src="images/logo.png" alt="Footer Logo">
+        <div class="footer-social">
+          <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2025 SmileSchool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
