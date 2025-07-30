@@ -213,3 +213,71 @@ article p, aside p {
   height: 16px;
 }
 
+/* Membership Section */
+.membership {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.membership h2 {
+  font-size: 2.2rem;
+  color: #161616;
+  margin-bottom: 40px;
+}
+
+.membership-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.membership-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 20px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.membership-item:hover {
+  transform: translateY(-5px);
+}
+
+.membership-item img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.membership-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.membership-item p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.membership-item button {
+  background-color: #c271ff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.membership-item button:hover {
+  background-color: #a85ce1;
+}
+
