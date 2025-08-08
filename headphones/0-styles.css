@@ -1,0 +1,133 @@
+/*
+ * Base Styles (Mobile-First)
+ * These styles apply to all screen sizes by default.
+ */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* Corrected: This moves the content to the top and bottom,
+       instead of centering everything */
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically on mobile */
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+nav .logo img {
+    height: 32px;
+    margin-bottom: 20px; /* Adds space below the logo on mobile */
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column; /* Stacks links vertically on mobile */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    /* Added: Pushes the hero content away from the top and bottom */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.hero-content  #btn {
+    background-color: #ee0909;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.hero-content .hero-paragraph {
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+/*
+ * Media Query for Tablet and Desktop
+ * These styles override the base styles for screens 768px and wider.
+ */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row; /* Aligns items horizontally on desktop */
+        justify-content: space-between;
+    }
+
+    nav .logo img {
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        flex-direction: row; /* Aligns links horizontally on desktop */
+        gap: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+}
