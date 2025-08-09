@@ -335,9 +335,7 @@ nav a {
 }
 /* footer */
 footer {
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-    url('images/headphones_hero_1.png') center/cover no-repeat;
+  background-color: #333;
   color: #ccc;
   padding: 25px 20px;
   font-size: 14px;

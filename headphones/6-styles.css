@@ -1,0 +1,94 @@
+/* Container styling */
+#our-results {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('images/headphones_hero_2.jpg') center/cover no-repeat;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+#our-results .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section title and description */
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+/* Cards styling */
+.card {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Pentagon shape with percentage inside */
+.pentagon {
+  position: relative;
+  width: 90px;
+  height: 80px;
+  margin: 0 auto 15px;
+  background: #FF6565;
+  clip-path: polygon(
+    50% 0%,      /* top */
+    93% 35%,     /* top right */
+    76% 100%,    /* bottom right */
+    24% 100%,    /* bottom left */
+    7% 35%       /* top left */
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+  user-select: none;
+}
+
+/* Paragraph inside cards */
+.card p {
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Responsive grid for tablets and above */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Optional smaller text on mobile */
+@media (max-width: 480px) {
+  .pentagon {
+    width: 70px;
+    height: 62px;
+    font-size: 18px;
+  }
+
+  .card p {
+    max-width: 150px;
+    font-size: 13px;
+  }
+}
