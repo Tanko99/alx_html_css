@@ -1,0 +1,464 @@
+/* Base Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('images/headphones_hero_2.jpg') center/cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+nav .logo img {
+  height: 32px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* Hide hamburger by default */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 28px;
+  height: 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: content-box;
+  z-index: 1001;
+}
+
+/* Hamburger bars */
+.hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* On small screens show hamburger and hide nav links */
+@media (max-width: 480px) {
+  nav ul {
+    display: none;  /* Hide nav links */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* adjust as needed */
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 180px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-content p {
+  margin: 10px 0;
+  max-width: 760px;
+  line-height: 1.5;
+}
+
+#btn {
+  background-color: #FF6565;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* NAV Desktop */
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+}
+
+/* Section General Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Section Description */
+.section-description {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+  text-align: center;
+  color: #555;
+}
+
+/* Grid Container for both sections */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* WHAT WE DO Section */
+#what-we-do {
+  padding: 100px 20px;
+  background: white;
+  color: #333;
+}
+
+#what-we-do .card {
+  background: #f9f9f9;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+  text-align: center;
+}
+
+#what-we-do .card i {
+  font-size: 64px;
+  color: #FF6565;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+/* Fun hover animation: scale and rotate */
+#what-we-do .card {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+#what-we-do .card:hover {
+  transform: scale(1.1) rotate(5deg);
+  opacity: 0.9;
+}
+#what-we-do .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+#what-we-do .card-text {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* OUR RESULTS Section */
+#our-results {
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+              url('images/headphones_hero_2.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+}
+#our-results .card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#our-results .card:hover {
+  transform: scale(1.15) rotate(-5deg);
+  opacity: 0.85;
+}
+
+#our-results .section-title {
+  color: white;
+}
+
+#our-results .section-description {
+  color: #ddd;
+}
+
+/* Pentagon Card */
+#our-results .card {
+  text-align: center;
+}
+
+.pentagon-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.pentagon-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  user-select: none;
+}
+
+.description {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+  max-width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive padding adjustment */
+@media (max-width: 480px) {
+  #what-we-do {
+    padding: 60px 15px;
+  }
+  #our-results {
+    padding: 60px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  #btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .percentage {
+    font-size: 22px;
+  }
+
+  .pentagon-wrapper {
+    width: 110px;
+  }
+}
+#contact-us {
+  padding: 80px 20px;
+  background: #f4f4f4;
+  color: #333;
+}
+
+#contact-us .section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact-us .section-description {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  line-height: 1.6;
+  color: #555;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #FF6565;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #FF6565;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e04e4e;
+}
+
+/* Responsive: stack inputs full width on small screens */
+@media (max-width: 480px) {
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+/* footer */
+footer {
+  background-color: #333;
+  color: #ccc;
+  padding: 25px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-copy {
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  color: #ccc;
+  font-size: 22px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #FF6565;
+}
+
+/* Responsive: stack items vertically on small screens */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-copy {
+    order: 3;
+    margin-top: 10px;
+  }
+
+  .footer-logo,
+  .footer-social {
+    order: 1;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
